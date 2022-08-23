@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.content h1{
+    font-size: 70px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 24px;
+    padding: 0px 8px 0px 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content span {
+    padding: 0px 8px 0px 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content li{
+    font-size: 24px;
+    padding: 0px 8px 0px 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#amey-photo-mobile {
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    border-radius: 5%;
+    /* float:left; */
+    display: block;
+    clear: both;
+}
+
+#amey-photo {
+    align-content: center;
+    text-align: center;
+    height: 200px;
+    border-radius: 5%;
+    float:left;
+    margin-right: 20px;
+}
+
+.name {
+    color:whitesmoke;
+    height: 100px;
+    font-size: 36px;
+    top: 32px;
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Vampiro One', cursive;
+}
+
+.icon-list { 
+    position: fixed;
+    bottom: 0px;  
+    padding-bottom: 10px;
+    background-color: #000;    
+} 
+  
+.icon-list a {
+    text-align: center; 
+    width: 74px;
+    color: grey; 
+    font-size: 30px; 
+    float:left; 
+} 
+  
+.sidebar {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    width: 300px;
+    background-color: #000;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+  
+.sidebar a {
+    margin-top: 8vh;
+    display: block;
+    color: rgb(161, 161, 161);
+    text-align: center;
+    font-size: 26px;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+}
+   
+.sidebar a.current {
+    color: white;
+}
+  
+.sidebar a:hover {
+    color: white;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#last-nav{
+    margin-bottom: 80px;
+}
+  
+div.content {
+    margin-left: 300px;
+    padding: 1px 16px;
+    height: vh;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #ddd;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-top: 16px; 
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0px 18px 0x 18px;
+    background-color: #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p{
+    font-size: 18px;
+}
+
+.blog-title{
+    font-size: 40px;
+    text-align: center;
+}
+
+.blog-date{
+    font-size: 18px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#amey-photo-container-mobile{
+    display: none;
+    text-align: center;
+}  
+
+
+@media screen and (max-width: 768px) {
+    #amey-photo-container{
+        display: none;
+    }    
+
+    #amey-photo-container-mobile{
+        display: block;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    
+    .sidebar {
+      width: 100%;
+      padding-top: 20px;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {
+        float: left; 
+        display: block; 
+        width: 32vw; 
+        font-size: 20px;
+        padding-bottom:20px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .sidebar a:hover {
+        color: white;
+        -ms-transform: scale(1.0); /* IE 9 */
+        -webkit-transform: scale(1.0); /* Safari 3-8 */
+        transform: scale(1.0);
+        transition: 0.2s;
+    }
+    
+    .name{
+        height: 80px;
+    }
+    
+    .content h1 {
+        text-align: center;
+    }
+    
+    div.content {margin-left: 0;}
+    .icon-list{
+        display: none;
+        height: 0px;
+    }
+    #last-nav{
+        padding-bottom:0px;
+        margin-bottom:30px;
+    }
+}
+
+.project-container{
+    border-top: grey 2px solid;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.project-container a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
