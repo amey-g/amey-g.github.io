@@ -73,7 +73,7 @@ body {
     width: 74px;
     color: grey; 
     font-size: 30px; 
-    float:left; 
+    float:left;
 } 
   
 .sidebar {
@@ -86,9 +86,13 @@ body {
     height: 100%;
     overflow: auto;
 }
+
+.menu{
+    margin-top: 10vh;
+}
   
 .sidebar a {
-    margin-top: 8vh;
+    margin-top: 15%;
     display: block;
     color: rgb(161, 161, 161);
     text-align: center;
